@@ -48,8 +48,7 @@ ADD http://launchpad.net/ubuntu/+cdmirrors-rss etc/ubuntu-mirrors-rss.xml
 
 # Set build ID
 ARG BUILD_ID
-ENV BUILD_ID "${BUILD_ID}"
-# ADD http://launchpad.net/ubuntu/+cdmirrors-rss etc/ubuntu-mirrors-rss.xml
+ENV TALISKER_REVISION_ID "${BUILD_ID}"
 
 
 # Setup commands to run server
